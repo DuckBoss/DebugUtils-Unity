@@ -5,7 +5,22 @@
 - Import both scripts into the projects asset folder.
 
 ## Usage : 
+'''
+void Start () {
+		string item = "Debug Test!";
+		item.Color("cyan");
+		item.Size(12);
 
+		DebugUtils.LogWithTime(item);
+		DebugUtils.LogWarningWithTime(item);
+
+		item.MarkImportant();
+		DebugUtils.LogWithTime(item);
+
+		item.MarkWarning();
+		DebugUtils.LogWithTime(item);
+}
+'''
 
 
 ## Extra Information:
