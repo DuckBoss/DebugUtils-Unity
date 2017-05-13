@@ -26,43 +26,39 @@ namespace JJ_Debug {
 
 		//Modifies a string to a designated color...
 		public static string Color(this string message, string color) {
-			string coloredString = string.Format("<color={0}>{1}</color>", color, message);
-			return coloredString;
+			return string.Format("<color={0}>{1}</color>", color, message);
 		}
 		//Modifies a string to a bold format...
 		public static string Bold(this string message) {
-			string boldedString = string.Format("<b>{0}</b>", message);
-			return boldedString;
+			return string.Format("<b>{0}</b>", message);
 		}
 		//Modifies a string to an italics format...
 		public static string Italics(this string message) {
-			string italicsString = string.Format("<i>{0}</i>", message);
-			return italicsString;
+			return string.Format("<i>{0}</i>", message);
 		}
 		//Modifies a strings size...
 		public static string Size(this string message, int size) {
-			string sizeString = string.Format("<size={0}>{1}</size>", size, message);
-			return sizeString;
+			return string.Format("<size={0}>{1}</size>", size, message);
 		}
 		//Modifies a string to the Important color...
 		public static string MarkImportant(this string message) {
-			string importantString = string.Format("<color=blue>{0}</color>", message);
-			return importantString;
+			return string.Format("<color=blue>{0}</color>", message);
 		}
 		//Modifies a string to the Warning color...
 		public static string MarkWarning(this string message) {
-			string importantString = string.Format("<color=yellow>{0}</color>", message);
-			return importantString;
+			return string.Format("<color=yellow>{0}</color>", message);
 		}
 		//Modifies a string to the Error color...
 		public static string MarkError(this string message) {
-			string importantString = string.Format("<color=red>{0}</color>", message);
-			return importantString;
+			return string.Format("<color=red>{0}</color>", message);
 		}
 		//Modifies a string to the Notice color...
 		public static string MarkNotice(this string message) {
-			string importantString = string.Format("<color=green>{0}</color>", message);
-			return importantString;
+			return string.Format("<color=green>{0}</color>", message);
+		}
+		//Adds Barrier/Seperator Line to a string...
+		public static string BarrierLine(this string message) {
+			return string.Format("{0}\n------------------------\n", message);
 		}
 	
 	}
