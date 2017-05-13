@@ -7,26 +7,36 @@
 ## Usage : 
 ```
 void Start () {
-	string item = "Debug Test!";
-	item.Color("cyan");
-	item.Size(12);
-
+	// The string to debug...
+	string item = "Debug Test 1!";
+	// Modify the string color...
+	item = item.Color("red");
+	// Modify the string size...
+	item = item.Size(12);
+	// Debug the object with time...
 	DebugUtils.LogWithTime(item);
+	// Debug the object as a warning with time...
 	DebugUtils.LogWarningWithTime(item);
 
-	item.MarkImportant();
-	DebugUtils.LogWithTime(item);
 
-	item.MarkWarning();
-	DebugUtils.LogWithTime(item);
+	string item2 = "Debug Test 2!";
+	// Modify the color to Important color...
+	item2 = item2.MarkImportant();
+	DebugUtils.LogWithTime(item2);
+
+
+	string item3 = "Debug Test 2!";
+	// Modify the color to Warning color...
+	item3 = item3.MarkWarning();
+	DebugUtils.LogWithTime(item3);
 }
 ```
-![](https://cloud.githubusercontent.com/assets/20238115/26022243/f4132464-376d-11e7-9dd3-a71893946a07.png)
+![](https://cloud.githubusercontent.com/assets/20238115/26022319/d6c98ec8-376f-11e7-8ff6-c2f980e0e1f9.PNG)
 
 
 ## Extra Information:
 ------------------------------
-- Check the 'TestJJDebug.cs' script for an example.
+- Check the 'TestJJDebug.cs' script for a working example.
 - The script is fully documented.
 
 
