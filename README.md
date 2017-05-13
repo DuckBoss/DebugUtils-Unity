@@ -2,7 +2,8 @@
 - A small script that contains useful debug methods as well as string rich text modifiers.
 
 ## Installation :
-- Import both scripts into the projects asset folder.
+- Import both scripts into the projects asset folder in Unity.
+- <i>Tested on Unity 5.5+</i>
 
 ## Usage : 
 ```
