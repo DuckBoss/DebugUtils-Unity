@@ -56,7 +56,7 @@ namespace JJ_Debug {
 		public static string MarkNotice(this string message) {
 			return string.Format("<color=green>{0}</color>", message);
 		}
-		//Adds Barrier/Seperator Line to a string...
+		//Adds Barrier/Separator Line to a string...
 		public static string BarrierLine(this string message) {
 			return string.Format("{0}\n------------------------\n", message);
 		}
