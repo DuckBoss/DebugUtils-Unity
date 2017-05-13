@@ -21,6 +21,7 @@ void Start () {
 	DebugUtils.LogWithTime(item);
 }
 ```
+![](https://cloud.githubusercontent.com/assets/20238115/26022243/f4132464-376d-11e7-9dd3-a71893946a07.png)
 
 
 ## Extra Information:
